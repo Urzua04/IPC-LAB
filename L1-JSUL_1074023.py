@@ -1,4 +1,4 @@
-#Introducción a programación - Sección:17
+#Introducción a la programación, sección:17
 #05/09/2023
 #José Santiago Urzúa Luarca
 #Objetivo: Crear un programa que realice las operaciones aritméticas básicas.
