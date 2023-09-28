@@ -10,7 +10,7 @@
 """ SALIDA
 3. Menú
 4. Calculo de factorial
-5. Secuencia
+5. Secuencia Fibonacci
 """
 #Menú de opciones en ciclo
 print("\n")
@@ -40,32 +40,37 @@ while opcion != "3":
             contador += 1
         
         print("\nEl factorial de", numero, "es:", resultado)
+        print()
 
-    """elif opcion == "2":
+    elif opcion == "2":
         print("Selecciónó la opción 2\n")
         numero = int(input("Ingresa un número que desea ver su secuencia fibonacci: "))
+        
 
-        if contador <= 0:
-            return []
-        elif contador == 1:
-            return [0]
-        elif contador == 2:
-            return [0, 1]
+        if numero <= 0:
+            print("error")
+        elif numero == 1:
+            print("0")
+        elif numero == 2:
+            print("0,1")
         else:
-            secuencia_fibonacci = [0, 1]
-            a, b = 0, 1
-            for _ in range(contador - 2):
-                a, b = b, a + b
-        secuencia_fibonacci = secuencia_fibonacci + [b]  
-            return secuencia_fibonacci
-secuencia_fibonacci = fibonacci(numero)
-print("La secuencia de Fibonacci de", numero, "es:", secuencia_fibonacci)
-"""
-
+            c = 3
+            n1=0
+            n2=1
+            texto= str(n1)+","+str(n2)+","
+            n3=0
+            while c <= numero:
+                n3 = n1 + n2
+                texto += str(n3) + ","
+                n1=n2
+                n2=n3
+                c += 1
+            
+            print("La secuencia de Fibonacci de ", numero, " es: ", texto)
+            print()
+    elif opcion == "3":
+        print("¡Gracias por utilizar el menú!..")
+        break
+    else:
+        print("Opción no válida")
     
-
-
-
-
-
-
